@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>placeholder</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="signup" data-class="sign">
+    <form>
+        <input type="text" name="name" placeholder="name">
+        <input type="password" name="password" placeholder="password">
+        <input type="text" name="name" placeholder="email">
+        <input type="submit" value="sign up">
+
+    </form>
+
+</div>
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //using attr
+
+    $(function () {
+        $('input').focus(function () {
+            $($(this).attr('data', $(this).attr('placeholder')));
+           $(this).attr('placeholder', '');
+        });
+        $('input').blur(function () {
+           $(this).attr('placeholder', $(this).attr('data'));
+        });
+
+
+    });
+
+
+</script>
+</body>
+</html>

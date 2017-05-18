@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>scroll down</title>
+    <style>
+    body {
+        height:2000px;
+
+    }
+    .container {
+            background: url("images/laptop1.jpg");
+            height: 100vh;
+        position: relative;
+        }
+        .scroll {
+            position: absolute;
+            top:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+
+</div>
+<button class="scroll">Scroll Down</button>
+
+<div class="features">
+    <h1>this is features section</h1>
+
+</div>
+
+<script>
+
+</script>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //to scroll use animation
+    $(function () {
+        $('.scroll').on('click', function () {
+          $('html, body').animate({
+             scrollTop: $('.features').offset().top
+          }, 1000);
+        });
+
+    });
+
+</script>
+</body>
+</html>

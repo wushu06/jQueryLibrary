@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>signIn|up</title>
+    <style>
+        .title h1 {
+            display: inline-block;
+        }
+    .signup {
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+<div class="title">
+    <h1 class="signin-title" data-class=".signin">Sign in</h1> | <h1 class="signup-title" data-class=".signup">Sign up</h1>
+
+</div>
+
+<div class="signin">
+
+    <form>
+        <input type="text" name="name" placeholder="name">
+        <input type="password" name="password" placeholder="password">
+
+    </form>
+
+</div>
+<hr>
+<div class="signup" data-class="sign">
+    <form>
+        <input type="text" name="name" placeholder="name">
+        <input type="password" name="password" placeholder="password">
+        <input type="text" name="name" placeholder="email">
+        <input type="submit" value="sign up">
+
+    </form>
+
+</div>
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+$(function () {
+   $('.title h1').click(function () {
+       $('.signin').fadeOut();
+       $($(this).data('class')).fadeIn();
+
+
+   }) ;
+
+});
+
+
+</script>
+</body>
+</html>

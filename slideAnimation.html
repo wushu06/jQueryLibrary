@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>animation | slide</title>
+  <style>
+      .slide , .slide2 {
+          border: 1px solid black;
+          margin: 15px 20px 20px;
+      }
+
+      .slide2 {
+          display: none;
+      }
+      /*animate*/
+      .animate {
+          border: 1px solid black;
+          margin: 15px 20px 20px;
+          width: 100px;
+
+      }
+      .animate-span {
+          display: none;
+
+      }
+  </style>
+</head>
+<body>
+
+<!--slide down -->
+
+
+<div class="slide">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique facilisis nunc, et tempor ipsum sagittis quis. In lobortis at nunc et facilisis. Sed sodales mi id velit mattis, eu efficitur augue consectetur. Pellentesque posuere commodo neque, et ullamcorper lacus tristique at. Donec pellentesque, orci mollis varius semper, sem nunc accumsan leo, ut euismod eros tellus in erat. Etiam accumsan in est id mattis. Sed consectetur venenatis lectus. Maecenas quis mollis mi. Etiam pretium ornare cursus. Duis ultricies libero eros, a condimentum mauris tempus in. Praesent turpis ante, fringilla vitae tellus a, <br>
+        luctus molestie orci. Ut non ornare elit. Proin placerat rhoncus lacinia.</p>
+
+</div>
+<div class="slide2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique facilisis nunc, et tempor ipsum sagittis quis. In lobortis at nunc et facilisis. Sed sodales mi id velit mattis, eu efficitur augue consectetur. Pellentesque posuere commodo neque, et ullamcorper lacus tristique at. Donec pellentesque, orci mollis varius semper, sem nunc accumsan leo, ut euismod eros tellus in erat. Etiam accumsan in est id mattis. Sed consectetur venenatis lectus. Maecenas quis mollis mi. Etiam pretium ornare cursus. Duis ultricies libero eros, a condimentum mauris tempus in. Praesent turpis ante, fringilla vitae tellus a, <br>
+        luctus molestie orci. Ut non ornare elit. Proin placerat rhoncus lacinia.</p>
+
+</div>
+
+<!--Animate-->
+<div class="animate">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique facilisis nunc, et tempor ipsum sagittis quis. In lobortis at nunc et facilisis. Sed sodales mi id velit mattis, eu efficitur augue consectetur. Pellentesque posuere commodo neque, et ullamcorper lacus tristique at. Donec pellentesque, orci mollis varius semper, sem nunc accumsan leo, ut euismod eros tellus in erat. Etiam accumsan in est id mattis. Sed consectetur venenatis lectus. Maecenas quis mollis mi. Etiam pretium ornare cursus. Duis ultricies libero eros, a condimentum mauris tempus in. Praesent turpis ante, fringilla vitae tellus a, <br>
+        luctus molestie orci. Ut non ornare elit. Proin placerat rhoncus lacinia.</p>
+
+</div>
+<span class="animate-span"> this is will be fade in</span>
+
+<script>
+
+</script>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+    $(function () {
+        //slide
+        $('.slide').click(function () {
+           $('.slide2').slideToggle();
+        });
+
+        //animate
+        var animate = $('.animate');
+       animate.mouseover(function () {
+           $(this).stop().animate({width: '500px'}, 5000);
+       }) ;
+      animate.mouseleave(function () {
+          $(this).stop();
+       });
+    });
+
+</script>
+</body>
+</html>

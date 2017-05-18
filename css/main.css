@@ -1,0 +1,412 @@
+/*start global rules*/
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/*start navbar*/
+.scrolled {
+    background: rgba(0,0,0,0.7);
+
+
+}
+.navbar {
+    padding: 10px;
+
+}
+
+
+/*start header */
+.header {
+
+    background:  url("../images/fre-sonneveld-2073.jpg") no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+
+}
+.header .overlay {
+
+    position: absolute;
+    background: rgba(0,0,0,0.52);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.centring-vh {
+    margin-top: 25vh;
+}
+@media (max-width: 990px) {
+    .centring-vh {
+        margin-top: 100px;
+
+    }
+    .header {
+        height: 150vh;
+    }
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 65px;
+}
+.header h1 span {
+    font-weight: normal;
+    color: #ff8b38;
+}
+.header h1 ~ .lead {
+    font-size: 30px;
+}
+
+.header h1 ~ .lead:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    margin: 25px 0px;
+}
+@media (max-width: 767px){
+    .header h1 ~ .lead:after {
+
+        margin: 25px auto;
+    }
+}
+.header button {
+    background: transparent;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    margin-top:20px;
+
+}
+@media (max-width: 767px){
+    .header button {
+        margin-bottom: 10px;
+    }
+}
+.header form {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+
+}
+.header form .form-control {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+.header form  input[ type ='submit']{
+    background-color: #ff8b38;
+    padding: 15px;
+}
+
+
+.header form h2 {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.header form h2 span {
+    color: #ff8b38;
+}
+/*start social section*/
+.socila-media {
+    padding: 10px;
+    box-shadow: -2px -5px 13px #000;
+    position: relative;
+
+}
+.socila-media h4 {
+    font-weight: bold;
+
+
+}
+.socila-media p {
+    color: #a1a1a1;
+
+}
+.socila-media i{
+    color: #ccc;
+    margin: 15px 15px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.socila-media .fa-facebook:hover{
+    color: #3b5998;
+
+}
+.socila-media .fa-twitter:hover{
+    color: #1da1f2;
+}
+/*start tabs section*/
+.tabs-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+.selected, .tabs-section .tab-switch li:hover{
+    background-color: #ff8b38 !important;
+}
+.tabs-section .tab-switch li {
+    height: 110px;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    line-height: 110px;
+    cursor: pointer;
+
+
+}
+.tab-content div:not(.tab-one){
+    display: none;
+
+}
+.tabs-section .tab-content h3 {
+    margin-top: 0px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+.tabs-section .tab-content p{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #c0c0c0;
+}
+.tabs-section .tab-content button{
+    background-color: #ff8b38;
+    color: #fff;
+}
+/*start sublist section */
+.sublist {
+    padding: 80px 0;
+    background-color: #FFF;
+
+}
+.sublist img{
+    box-shadow: 10px 10px 25px #888888;
+    margin-top: 50px;
+}
+.sublist i{
+    border: 2px solid #ff8b38;
+    border-radius: 50px;
+    padding: 10px;
+    color:#ff8b38;
+    margin-right: 20px;
+    float: left;
+
+}
+.list-info h3{
+    font-weight: bold;
+}
+.list-info p {
+    margin-bottom: 30px;
+}
+.list-info h3:after {
+    content: '';
+    width: 65px;
+    height: 3px;
+    display: block;
+    background-color:#ff8b38;
+    margin: 20px 0;
+
+}
+.list-icon h5{
+    font-weight: bold;
+
+}
+/*start standard*/
+.standard {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+/*start pricing*/
+.price {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    
+}
+.price h2:after {
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    background-color:#ff8b38;
+    margin: 20px 45%;
+
+}
+.price .price-head {
+    font-size: 50px;
+}
+.price .price-desc {
+    margin-bottom: 50px;
+    color:#a9aaac;
+}
+.price-box {
+    background-color: #fff;
+}
+.price-box .plan-head {
+    background-color: #333;
+    color: #fff;
+    padding:15px 0;
+    margin: 0;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+.option-price {
+    background-color: #333;
+    padding: 10px 0;
+    border: 3px solid #ff8b38;
+
+}
+.option-price .price {
+    background-color: #333;
+    font-size: 70px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+
+
+}
+.option-price .price .usd {
+    font-size: 30px;
+}
+.option-price .period {
+    color: #7e7e7e;
+    font-weight: bold;
+    font-style: italic;
+}
+.price-box .config li{
+    padding: 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.most-pop {
+    background-color:  #ff8b38;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.price .col-md-4:first-child, .col-md-4:last-child{
+    margin-top: 55px;
+}
+/*start stylish*/
+.stylish {
+
+    background:  url("../images/fre-sonneveld-2073.jpg") no-repeat top center;
+    background-size: cover;
+    min-height: 320px;
+    position: relative;
+    color: #fff;
+}
+.stylish h2:after{
+    content: '';
+    width: 65px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin: 25px auto;
+}
+.stylish .overlay {
+    padding: 70px 0;
+    position: absolute;
+    background: rgba(0,0,0,0.52);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.stylish button{
+    display: block;
+    margin: 30px auto;
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.stylish .stylish-desc{
+    color: #a9aaac;
+}
+/*start contact*/
+.contact {
+    padding: 80px 0;
+
+}
+.contact h2:after{
+    content: '';
+    width: 65px;
+    height: 2px;
+    display: block;
+    background-color: #ff8b38;
+    margin: 25px auto;
+
+}
+.contact form input[type="text"],
+.contact form input[type="email"]{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: none;
+
+
+}
+.contact  textarea{
+    height: 178px;
+    border:none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact .contact-button{
+    display: block;
+    margin: 30px auto;
+    padding: 8px 20px;
+    background-color: #ff8b38;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.contact .contact-desc {
+    color: #a9aaac;
+    padding-bottom: 40px;
+}
+/* footer*/
+.footer{
+    background-color: #000;
+    color:#eee;
+    padding: 20px;
+    font-size: 18px;
+}
+    /*start framework */
+.upper {
+    text-transform: uppercase;
+}
+.container{
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .text-center-xs{
+        text-align: center;
+    }
+    .
+
+
+}

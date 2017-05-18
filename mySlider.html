@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mySlider</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+
+
+<ul class="slider">
+    <li>First paragraphe</li>
+    <li>Second </li>
+    <li><a href="#">Home</a></li>
+
+</ul>
+<button class="right"> > </button>
+<button class="left"> < </button>
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        //making slider using eq fadIn fadeOut and setInterval and also i
+        var slider = $('.slider'),
+            children = slider.children('li'),
+            lenght = children.length,
+            i = 0,
+
+            mySlider = function () {
+
+             children.eq(i).fadeOut(100, function () {
+                 i ++;
+                 if (i === lenght){
+                     i = 0;
+                 }
+                 children.eq(i).fadeIn();
+
+             });
+
+
+
+            };
+        children.not(':first').hide();
+
+        setInterval(mySlider, 5000);
+
+        $('button').click(function () {
+           mySlider();
+        });
+
+    });
+
+</script>
+</body>
+</html>
