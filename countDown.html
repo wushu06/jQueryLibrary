@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Counting down</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="count">
+3
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //using attr
+
+    $(function () {
+
+        var countDown = setInterval(function () {
+
+            var counter = parseInt($('.count').html()); // change string to integer
+
+            if(counter !== 0 ){
+
+                $('.count').html(counter - 1);
+
+            }else {
+
+                $('.count').html('Finished');
+
+            }
+
+        }, 1000);
+
+
+
+    });
+
+
+</script>
+</body>
+</html>

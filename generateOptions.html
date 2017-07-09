@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Generate select options</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+
+<select name="select" id="years">
+    <option>choose year</option>
+</select>
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //using attr
+
+    $(function () {
+
+        for (i = 1950; i <= 2017; i++){
+            $('<option>', {value: i, text: i}).appendTo($('#years'));
+        }
+
+
+
+
+    });
+
+
+</script>
+</body>
+</html>

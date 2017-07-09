@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Remaining Text</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <form>
+      <textarea cols="30" rows="30" maxlength="100" id="text" class="text"></textarea>
+    </form>
+    <div class="message">
+
+    </div>
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //using attr
+
+    $(function () {
+      var maxLength = $('textarea').attr('maxlength');
+      $('.message').html('<span> Number of Characters remaining: '+ maxLength +'</span>');
+
+      $('textarea').keyup(function () {
+
+          var textLenght = $(this).val().length,
+              remText = maxLength - textLenght;
+
+          $('.message').html('<span> Number of Characters remaining: '+ remText +' </span>');
+
+
+      });
+
+
+    });
+
+
+</script>
+</body>
+</html>

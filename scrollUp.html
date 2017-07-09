@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>scroll down</title>
+    <style>
+        body {
+            height:2000px;
+
+        }
+        .container {
+            background: url("images/laptop1.jpg");
+            height: 100vh;
+            position: relative;
+        }
+        .scroll {
+            position: absolute;
+            top:20px;
+        }
+        .btnUp {
+            position: fixed;
+            right: 10px;
+            top:600px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+
+</div>
+<button class="scroll">Scroll Down</button>
+
+<div class="features">
+    <h1>this is features section</h1>
+
+</div>
+<div class="up">
+    <button class="btnUp">Up</button>
+</div>
+
+<script>
+
+</script>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+    //to scroll use animation
+    $(function () {
+        $(window).scroll(function () {
+
+            var scrollButton = $('.btnUp');
+
+            if($(this).scrollTop() >= 500 ){
+                scrollButton.show();
+            }else {
+                scrollButton.hide();
+            }
+
+            scrollButton.click(function () {
+               $('html,body').animate({
+                   scrollTop: 0
+               }, 500)
+            });
+
+        });
+
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../grunt/.idea/Grunt.iml" filepath="$PROJECT_DIR$/../grunt/.idea/Grunt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../grunt2/.idea/grunt2.iml" filepath="$PROJECT_DIR$/../grunt2/.idea/grunt2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jQueryLibrary.iml" filepath="$PROJECT_DIR$/.idea/jQueryLibrary.iml" />
+      <module fileurl="file://C:/xampp/htdocs/magentoMytheme/.idea/magentoMytheme.iml" filepath="C:/xampp/htdocs/magentoMytheme/.idea/magentoMytheme.iml" />
+    </modules>
+  </component>
+</project>

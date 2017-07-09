@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        body {
+            height: 4000px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .header {
+            background: url("images/laptop2.jpg");
+        }
+        .centerDiv {
+            background: red;
+            width: 200px;
+            height: 200px;
+        }
+        .active-input {
+            background: red;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
+  
+</head>
+<body>
+<div class="header">
+    <h1>Header height full window</h1>
+
+
+</div>
+
+<div class="centerDiv">
+    Center using plugin
+</div>
+
+
+<div>
+    <form>
+        <input type="text" placeholder="First name" id="input">
+    </form>
+</div>
+
+<div>
+    <button id="goUp">Up</button>
+</div>
+<section>
+    <div class="buttons">
+        <button data-class=".tab-one">Tab one</button>
+        <button data-class=".tab-two">Tab two</button>
+        <button data-class=".tab-three">Tab three</button>
+
+    </div>
+    <div class="container-tab">
+        <div class="tab-one">
+            <h1>
+                this is tab one
+            </h1>
+            <p>description</p>
+
+        </div>
+        <div class="tab-two hidden">
+            <h1>
+                this is tab two
+            </h1>
+            <p>description</p>
+
+        </div>
+        <div class="tab-three hidden">
+            <h1>
+                this is tab three
+            </h1>
+            <p>description</p>
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <ul class="slider">
+        <li>First paragraphe</li>
+        <li>Second </li>
+        <li><a href="#">Home</a></li>
+
+    </ul>
+    <button class="right"> > </button>
+    <button class="left"> < </button>
+</section>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="jQuery_myplugin.js"></script>
+</body>
+</html>
